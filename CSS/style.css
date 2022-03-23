@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: hsl(225, 100%, 98%);
+}
+
+main{
+    max-width: 416px;
+}
+
+main img{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.conteudo{
+    border-radius: 0 0 1rem 1rem;
+    background-color: #ffffff;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-informations{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.conteudo h1{
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.conteudo .description{ 
+  display: flex;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+.conteudo-informations{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.music-pricy{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.music-pricy span{
+    color: hsl(224, 23%, 55%);
+}
+
+.pricy{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+}
+
+.conteudo-informations a{
+    color: hsl(247, 75%, 52%);
+    font-weight: 700;
+}
+
+.conteudo button{
+    width: 100%;
+    padding: 0.875rem 0;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: hsl(247, 75%, 52%);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    transition: 0.3s;
+}
+
+.conteudo button:hover{
+    background-color: #766CF1;
+}
+
+.conteudo #cancel-order{
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.conteudo #cancel-order:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 400px){
+   .music-pricy{
+       gap: 1rem;
+       font-size: 0.875rem;
+   }
+
+   .conteudo{
+       padding: 1rem;
+   }
+   
+   .conteudo-informations{
+      padding: 0.875rem;
+   }
+
+   .conteudo a{
+       font-size: 0.875rem;
+       border-bottom: 1px solid hsl(247, 75%, 52%);
+   }
+}
